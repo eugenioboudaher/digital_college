@@ -73,6 +73,10 @@ git commit -m "xxxxxxx"
 git remote add origin https: xxxxxx/github.com/
 git push origin master
 
+git checkout -b eugenio - cria e muda
+git checkout master - muda de branch
+git branch - lista as branches
+
 
 
 
