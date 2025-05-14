@@ -1,0 +1,86 @@
+https://github.com/digitalcollegebr/fullstack-avaliacoes/blob/main/Modulo_I/II-HTML_e_CSS/imagens/landing-page-01.png
+
+ARRUMAR EMPREGO
+glassdoor
+catho
+google vagas
+
+filtrar tech recruiter
+
+GITHUB
+
+1 - vai no readme que esta nos comentários
+2 - navega para o actions do github 
+3 - entre na action GitHub-Profile-3D-Contrib
+4 - copie o yml do Workflow file do GitHub-Profile-3D-Contrib
+5 - crie uma action no seu readme e execute 
+(da uma olhada nas suas permissões) 
+6 - se deu tudo certo agora tem uma pasta profile-3d-contrib no seu readme 
+7 - la tem diversos temas escolha um 
+8 - e ai basta vincular no readme como imagem ![Status](./url) 
+e pronto seu readme tem uma animação 3D 
+me segue no github para dar uma força 
+falta pouco para 1k 
+
+GIT - GITHUB
+
+chat gpt
+1. Configuração
+git config --global user.name "Seu Nome" — define o nome do autor.
+git config --global user.email "seu@email.com" — define o e-mail do autor.
+git config --list — exibe as configurações atuais.
+
+2. Iniciando um repositório
+git init — cria um repositório Git vazio na pasta atual.
+git clone <url> — clona um repositório remoto.
+
+3. Trabalhando com alterações
+git status — mostra o estado atual do repositório.
+git add <arquivo> — adiciona um arquivo à staging area.
+git add . — adiciona todos os arquivos modificados.
+git commit -m "mensagem" — cria um commit com os arquivos em staging.
+git commit -am "mensagem" — adiciona e commita arquivos já rastreados.
+
+4. Trabalhando com histórico
+git log — mostra o histórico de commits.
+git show <hash> — mostra detalhes de um commit específico.
+git diff — exibe diferenças entre arquivos modificados e o último commit.
+
+5. Branching (ramificações)
+git branch — lista as branches.
+git branch <nome> — cria uma nova branch.
+git checkout <nome> — troca para a branch especificada.
+git checkout -b <nome> — cria e já troca para a nova branch.
+git merge <branch> — une a branch atual com a especificada.
+
+6. Repositórios remotos
+git remote -v — lista os repositórios remotos.
+git remote add origin <url> — adiciona um repositório remoto.
+git push origin <branch> — envia commits para o repositório remoto.
+git pull — baixa e mescla alterações do repositório remoto.
+
+7. Desfazendo mudanças
+git restore <arquivo> — desfaz alterações no arquivo.
+git reset HEAD <arquivo> — remove arquivo da staging area.
+git revert <hash> — desfaz um commit criando um novo commit inverso.
+git reset --hard <hash> — volta para um commit anterior e apaga tudo depois dele (perigoso).
+
+ESCOLA
+git init -- inicializar
+git add . -- adiciona todos os arquivos
+git add arquivo.txt
+git commit -m "xxxxxxx"
+git remote add origin https: xxxxxx/github.com/
+git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
