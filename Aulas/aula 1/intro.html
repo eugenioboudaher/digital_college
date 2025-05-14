@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Aula</title>
+<style>
+    body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        gap: 30px;
+        color: white;
+    }
+    
+    div {
+        background-color: aqua;
+        animation: pulse 5s linear infinite;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 51px;
+        animation-delay: 1s;
+        text-shadow: 5px 5px 5px black;
+    }
+    div:nth-child(2){
+        background-color: aqua;
+        animation: pulse 5s linear infinite;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        top: 10px;
+        left: 10px;
+        animation-delay: 2s;
+        font-size: 51px;
+    }
+    div:nth-child(3) {
+        background-color: aqua;
+        animation: pulse 5s linear infinite;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        animation-delay: 3s;
+        font-size: 51px;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-shadow: 0 0 10px yellow;
+    }
+
+    .container {
+        width: 20px;
+    }
+       @keyframes pulse {
+        0% {
+            scale: 1;
+            opacity: 1;
+            background-color: yellow;
+        }
+        50% {
+            scale: 0;
+            opacity: 0;
+            background-color: blue;
+        }
+  
+        100% {
+            scale: 1;
+            opacity: 1;
+            background-color: yellow;
+        }
+    }
+</style>
+</head>
+<body>
+
+        <h1>Olá mundo!!!</h1>
+
+
+        <div>Hello</div>
+        <div>Hello</div>
+        <div>Hello</div>
+
+</body>
+</html>

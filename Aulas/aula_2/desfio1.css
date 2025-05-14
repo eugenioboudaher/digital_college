@@ -1,0 +1,170 @@
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header {
+    background-image: url('img/wave.svg');
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+
+.headerDiv {
+
+    padding: 3em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+    width: 50%;   
+}
+
+
+
+.headerDiv input {
+    height: 40px;
+    width: 200px;
+}
+
+.headerDiv button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+}
+
+.headerDiv img {
+    width: 200px;
+}
+
+h1 {
+    margin-bottom: 0.05em;
+}
+
+.headerDiv h2 {
+    font-size: 1.3em;
+    font-weight: lighter;    
+}
+
+.firstParagraph {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.pc {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 45%;
+    top: 380px;
+}
+
+p {
+    font-size: 0.3em;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 50px;
+    gap: 50px;
+}
+
+.card {
+    width: 33%;
+}
+
+.cardParagraph, h6 {
+    font-size: 1em;
+}
+
+.companies {
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
+    height: 100px;
+    width: 70%;
+}
+
+i {
+    color: #008060;
+    font-size: 2.5em;
+}
+
+.cardContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.beforeFooter p{
+    font-size: 1em;
+    text-align: center;
+}
+
+.beforeFooter {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.beforeFooter button {
+    background-color: #008060;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, #faf9f8, white);
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+footer h2{
+    font-size: 2em;
+}
+
+footer p{
+    font-size: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    width: 60%;
+}
+
+.accordion {
+    width: 70%;
+}

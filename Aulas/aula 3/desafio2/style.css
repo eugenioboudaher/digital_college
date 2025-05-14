@@ -1,0 +1,259 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #f4f4f4;
+    height: 80%;
+    width: 95%;
+}
+
+.container1 {
+    height: 20%;
+    padding: 1em;
+    display: flex;
+    gap: 30px;
+}
+
+.container1 img {
+    width: 7em;
+    margin-top: 0;
+    bottom: 10px;
+    position: relative;
+}
+
+.container1 p {
+    width: 300px;
+    height: auto;
+    font-size: 0.5em;
+    border-left: 0.5px solid black;
+    padding-left: 20px;
+
+}
+
+.container2 {
+    height: 80%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    bottom: -70px;
+}
+
+.container2 img {
+    width: 15em;
+    position: relative;
+    bottom: 50px;
+}
+
+.container2 h6 {
+    color: #4093c8;
+    font-size: 0.7em;
+    margin-bottom: 10px;
+
+}
+
+.headerText {
+    width: 300px;
+    margin-top: 80px;
+    position: relative;
+    top: -50px;
+}
+
+.headerText p {
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1em;
+
+}
+
+.headerText .headerParagraph {
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+.headerText button  {
+    background-color: #e63d27;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.mainContent {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContentText {
+    text-align: center;
+}
+
+.mainContentTextParagraph {
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.mainContentTextParagraph p:nth-child(1) {
+    font-weight: bolder;
+}
+
+.mainContentList {
+    width: 50%;
+}
+
+.mainContentList h4 {
+    text-align: center;
+    color: #3694ca;
+}
+
+.mainContentList ul li {
+    font-size: 0.8em;
+    list-style: none;
+    line-height: 1.8em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mainContentList ul {
+    margin-bottom: 0;
+}
+
+.mainContentList ul li i {
+    color: blue;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 0;
+    width: 400px;
+}
+
+.iconsContainer i {
+    color: blue;
+}
+
+.formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.formContainerHeader {
+    background-color: #0e6da5;
+    width: 95%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 0 20px black;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 30px;
+    background-color: white;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.inputText {
+    background-color: white;
+    border: 0.5px solid gray;
+    margin-top: 5px;
+    height: 30px;
+}
+
+#selectBar {
+    height: 30px;
+}
+
+.checkboxContainer {
+    display: flex;
+    flex-direction: row;   
+}
+
+.inputCheckbox {
+    width: 5%;
+}
+
+.submitButton {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    height: 8vh;
+    border-radius: 50px;
+    border: none;
+}
+
+.submitButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.submitButton:hover {
+    background-color: color-mix(in srgb, red , white 20%);
+}
+
+.footer {
+    background-color: #1d1d1f;
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.textFooterContainer {
+    margin-bottom: 40px;
+}
+
+.footerContainer {
+    margin: 0 100px 0 100px;
+}
+
+
+
+
