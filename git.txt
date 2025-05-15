@@ -72,6 +72,7 @@ git add arquivo.txt
 git commit -m "xxxxxxx"
 git remote add origin https: xxxxxx/github.com/
 git push origin master
+
 git branch -m novoNome - muda o nome da branch
 
 
