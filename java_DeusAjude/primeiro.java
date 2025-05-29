@@ -8,5 +8,7 @@ public class primeiro {
         System.out.println("Digite seu nome");
         String nome = scanner.nextLine();
         System.out.println("Hello " + nome);
+
+        scanner.close();
     }
 }

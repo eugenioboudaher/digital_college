@@ -13,6 +13,8 @@ public class HelloWorld {
         int soma = numero1 + numero2;
 
         System.out.println(soma);
+
+        scanner.close();
         
 }
 }
