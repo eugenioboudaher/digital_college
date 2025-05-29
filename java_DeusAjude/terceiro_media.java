@@ -23,6 +23,8 @@ public class terceiro_media {
 
         System.out.println(resultado);
 
+        sc.close()
+
 
         
     }
