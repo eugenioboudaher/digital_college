@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --siteWhite: #ffffff;
+}
+
+header {
+    background-color: var(--siteWhite);
+    display: flex;
+    justify-content: space-between;
+    height: 2.5em;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.logoHeader img {
+    width: 7em;
+}
+
+.menuHeaderUl {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-right: 5em;
+    gap: 1.5em;
+}
+
+.menuHeaderUl li,
+.menuHeaderUl a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menuHeaderUl li {
+    color: #4f4f5b;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    width: 4em;
+    background-color: transparent;
+}
+
+.menuHeaderUl li:nth-child(1) {
+    color: white;
+    background-color: #ff4800;
+    display: flex;
+    justify-content: center;
+}
+
+.menuHeader {
+    height: 100%;
+    width: 10em;
+}
+
+.menuHeaderUl li a {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    color: #4f4f5b;
+    transition: 0.5s ease;
+}
+
+.buttonHeader {
+    margin-right: 1em;
+}
+
+.buttonHeader .btnHeader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ff4800;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home {
+    color: white;
+}
+
+.menuHeaderUl li a:hover {
+    background-color: #ff4800;
+    color: white;
+}
+
+/* HERO BANNER AJUSTADO */
+
+.heroBanner {
+    position: relative;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/container.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+/* Camada escura aplicada só ao fundo */
+.heroBanner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* 60% escuro */
+    z-index: 0;
+}
+
+/* Conteúdo acima da camada escura */
+.heroBanner > div {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroBanner div h1,
+.heroBanner div h3 {
+    position: relative;
+
+    margin: 0.2em 0;
+}
+
+.titleSection {
+    position: relative;
+    z-index: 1;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.titleSection h3 {
+    color: #ff4800;
+    font-weight: bolder;
+}
+
+.titleSection h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+
+.btnSection button {
+    margin-left: 0;
+    position: relative;
+    right: 0.5em;
+    height: 2em;
+    background-color: #ff4800;
+    color: white;
+    border: none;
+    padding: 0.2em 0.7em;
+}
+
+.btnSection input {
+    margin-right: 0;
+    height: 2em;
+    padding-left: 1em;
+}
+
