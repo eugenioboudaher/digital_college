@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+</style>
+<body>
+
+        <input type="number" placeholder="Enter the number of sides" class="sides">
+        <input type="text" placeholder="Enter the size" class="size">
+        <button>Calculate</button>
+        <h1></h1>
+
+
+    <script>
+
+        let button = document.querySelector("button")
+
+        let h1 = document.querySelector("h1")
+
+        button.addEventListener("click", () => {
+            let sides = document.querySelector(".sides")
+            let size = document.querySelector(".size")
+            let sidesValue = sides.value
+            let sizeValue = size.value
+
+            if (sidesValue == 3) {
+                h1.textContent = `O polígono é um triangulo e o perímetro é ${sizeValue * sidesValue}`
+            }else if (sidesValue == 4) {
+                h1.textContent = `O polígono é um quadrado e o perímetro é ${sizeValue * sidesValue}`
+            }else if (sidesValue === 5) {
+                h1.textContent = `O polígono é um pentagono e o perímetro é ${sizeValue * sidesValue}`
+            }
+        })
+
+    </script>
+</body>
+</html>

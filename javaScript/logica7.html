@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+</style>
+<body>
+    <!-- Tendo como	 entrada	 a	 altura	 e	 o	 sexo	 (codificado	 da	 seguinte	 forma:	
+1:feminino	 	 2:masculino)	 de	 uma	 pessoa,	 construa	 um	 programa	 que	
+calcule	e	imprima	seu	peso	ideal,	utilizando	as	seguintes	
+Fórmulas:	
+- para	homens:	(72.7	*	Altura)	– 58	
+- para	mulheres:	(62.1	 -->
+
+    <input type="text" placeholder="Enter your name" class="name">
+    <input type="text" placeholder="Enter your sex" class="sex">
+    <input type="number" placeholder="Enter your height" class="height">
+    <button>Calculate</button>
+    <h1></h1>
+    <script>
+
+        let button = document.querySelector("button")
+        let h1 = document.querySelector("h1")
+
+        button.addEventListener("click", () => {
+            let name = document.querySelector(".name").value
+            let sex = document.querySelector(".sex").value
+            let height = Number(document.querySelector(".height").value)
+
+            let man = (72.7	* height) - 58	
+            let woman = (62.1 * height) - 44.7	
+
+            if (sex === "m") {
+                h1.textContent = `Ms ${name} your number is ${woman}`
+            }else {
+                h1.textContent = `Ms ${name} your number is ${man}`
+            }
+        })
+
+
+    </script>
+</body>
+</html>

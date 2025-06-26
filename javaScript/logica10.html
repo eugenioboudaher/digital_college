@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+                }
+        </style>
+</head>
+<body>
+    <script>
+        let highest = 0
+        let lowest = 0
+        for (i = 0; i < 3; i++) {
+            let num = parseInt(prompt("Number"))
+            if (i == 0) {
+                highest = num;
+                lowest = num;
+            }else {
+                if (num > highest) {
+                    highest = num
+                }if (num < lowest) {
+                    lowest = num
+                }
+            }
+            
+        }
+        alert(`The highest is ${highest} the lowest is ${lowest}`)
+    </script>
+    
+</body>
+</html>

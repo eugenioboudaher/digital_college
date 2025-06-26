@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    h1 {
+        font-weight: bolder;
+        text-shadow: 0 0 5px yellow;
+    }
+    button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        background-color: green;
+        column-rule: white;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+</style>
+<body>
+
+        <input type="number" placeholder="Enter the grade 1" class="grade1">
+        <input type="number" placeholder="Enter the grade 2" class="grade2">
+        <input type="number" placeholder="Enter the grade 3" class="grade3">
+        <input type="number" placeholder="Enter the grade 4" class="grade4">
+        <button>Calculate</button>
+        <h1>Result</h1>
+
+
+    <script>
+
+        let grade1 = document.querySelector(".grade1")
+        let grade2 = document.querySelector(".grade2")
+        let grade3 = document.querySelector(".grade3")
+        let grade4 = document.querySelector(".grade4")
+        let button = document.querySelector("button")
+        let h1 = document.querySelector("h1")
+
+        button.addEventListener("click", () => {
+            let grade1Value = parseFloat(grade1.value)
+            let grade2Value = parseFloat(grade2.value)
+            let grade3Value = parseFloat(grade3.value)
+            let grade4Value = parseFloat(grade4.value)
+
+            let average = (grade1Value + grade2Value + grade3Value + grade4Value) / 4
+
+            if (average < 6) {
+                h1.textContent = "You have failed"
+                h1.style.color = "red"
+            }else if (average >= 10) {
+                h1.textContent = "You have passed with honor"
+            }else if (average >= 6) {
+                h1.textContent = "You have passed"
+            }
+        })
+
+
+    </script>
+</body>
+</html>

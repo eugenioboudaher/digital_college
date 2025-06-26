@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" class="number1" placeholder="Digite o numero 1">
+    <input type="number" class="number2" placeholder="Digite o numero 2">
+    <input type="number" class="number3" placeholder="Digite o numero 3">
+    <button>Ordem Crescente</button>
+    <ul></ul>
+    
+    <script>
+        let button = document.querySelector("button")
+        let ul = document.querySelector("ul")
+        let numbers = []
+
+        button.addEventListener("click", () => {
+        let number1 = document.querySelector(".number1")
+        let number2 = document.querySelector(".number2")
+        let number3 = document.querySelector(".number3")
+
+        let number1Value = number1.value
+        let number2Value = number2.value
+        let number3Value = number3.value
+
+        numbers.push(number1Value)
+        numbers.push(number2Value)
+        numbers.push(number3Value)
+
+        sortedNumbers = numbers.sort()
+
+        for (i of sortedNumbers) {
+            let li = document.createElement("li")
+            li.textContent = i
+            ul.appendChild(li)
+        }
+        })
+
+    </script>
+</body>
+</html>
