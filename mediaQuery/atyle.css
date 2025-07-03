@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    header {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 2em;
+    }
+
+    header img {
+        width: 50%;
+        margin-bottom: 0.2em;
+    }
+
+    main {
+        background-color: color-mix(in srgb, blue , white 70%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+
+    .form {
+        background-color: white;
+        width: 80%;
+        border-radius: 10px;
+        height: 80%;
+        padding: 2em;
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainHeader {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5em;
+    }
+
+    .mainForm input {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        background-color: #E0E0E0;
+        padding: 1em;
+    }
+
+    .mainForm div button{
+        background-color: #C92071;
+        border: none;
+        color: white;
+        padding: 1em;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .mainFormAnchor {
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+
+    .mainFormButtonDiv {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mainFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .mainFooter div img {
+        width: 8%;
+    }
+
+    .mainFooter div {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        height: 90vh;
+        font-size: 0.6em;
+        padding: 2em;
+    }
+
+
+}
