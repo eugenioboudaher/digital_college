@@ -1,0 +1,16 @@
+let frutas = [
+  "Maçã",
+  "Banana",
+  "Pera",
+  "Uva",
+  "Laranja",
+  "Abacaxi",
+  "Manga",
+  "Melancia",
+  "Morango",
+  "Kiwi"
+];
+
+
+let r = parseInt(Math.random() * frutas.length)
+console.log(r);
