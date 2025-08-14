@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2em;
+            background-color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+        }
+        p {
+            color: yellow;
+            text-shadow: 0 0 10px yellow;
+            font-size: 3em;
+        }
+        
+    </style>
+</head>
+<body>
+
+    Alcool
+    <input type="radio" id="alcool" name="combustivel" >
+    Gasolina
+    <input type="radio" id="gasolina" name="combustivel">
+
+    <input type="text" placeholder="Digite o núemro de litros" id="input">
+
+    <button>Calcular</button>
+
+    <p></p>
+
+    <script>
+
+        const button = document.querySelector("button")
+
+        button.addEventListener("click", () => {
+            const alcool = document.querySelector("#alcool")
+            const gasolina = document.querySelector("#gasolina")
+            const volume = document.querySelector("#input")
+            let volumeValido = Number(volume.value)
+            const p = document.querySelector("p")
+
+            if(alcool.checked && Number(volume.value) <= 20) {                
+                p.textContent = `Valor a ser pago ${volumeValido * 4}`
+            }else if (alcool.checked && Number(volume.value) > 20){
+                p.textContent = `Valor a ser pago ${volumeValido * 3.5}`
+            }else if (gasolina.checked && Number(volume.value) <= 20){
+                p.textContent = `Valor a ser pago ${volumeValido * 5}`
+            }else if (gasolina.checked && Number(volume.value)) {
+                p.textContent = `Valor a ser pago ${volumeValido * 5}`
+            }
+        
+        })
+
+
+        
+
+    </script>
+</body>
+</html>

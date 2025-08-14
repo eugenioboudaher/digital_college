@@ -11,4 +11,5 @@ let usuario2 = {id: 2,
                reclamacao: "Promissor"
 }
 
-console.log(usuario['nome'])
+let lista = [usuario1, usuario2]
+console.log(lista)

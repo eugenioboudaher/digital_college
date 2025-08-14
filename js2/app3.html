@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 3em;
+    }
+    input {
+        width: 30%;
+    }
+    button {
+        width: 10%;
+    }
+    p {
+        color: red;
+        font-size: 2em;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+</style>
+</head>
+<body>
+    <input type="text" placeholder="Digite a nota 1" id="um">
+    <input type="text" placeholder="Digite a nota 2" id="dois">
+    <input type="text" placeholder="Digite a nota 3" id="tres">
+    <button>Calcular</button>
+    <p></p>
+    
+    <script>
+        const button = document.querySelector("button")
+        button.addEventListener("click",() => {
+            const a = document.querySelector("#um")
+            const b = document.querySelector("#dois")
+            const c = document.querySelector("#tres")
+            let result = document.querySelector("p")
+
+            let media = (Number(a.value) + Number(b.value) + Number(c.value)) / 3
+            let user = `A sua média foi de ${media}`
+            result.textContent = user
+        })
+    </script>
+</body>
+</html>

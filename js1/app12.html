@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salario = Number(prompt("Digite o valor do salário: "))
+        let ir;
+        let inss;
+
+        if (salario < 2428.80) {
+            ir = 0;
+        }else if (salario <= 2826.65) {
+            ir = (salario * 0.075) - 142.0;
+        }else if (salario <= 3751.05) {
+            ir = (salario * 0.15) - 354.8;
+        }else if (salario <= 4664.68) {
+            ir = (salario * 0.225) - 636.13;
+        }else {
+            ir = (salario * 0.275) - 869.36;
+        }
+
+
+        if (salario < 1518.00) {
+            inss = salario * 0.075;
+        }else if (salario <= 2793.88) {
+            inss = salario * 0.09;
+        }else if (salario <= 4190.83) {
+            inss = salario * 0.12;
+        }else {
+            inss = salario * 014;
+        }
+
+        
+    </script>
+</body>
+</html>

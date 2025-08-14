@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Faça um script que leia três números inteiros, em seguida mostre o maior e o menor deles.
+
+        let a = Number(prompt("Digite o número 1"));
+        let b = Number(prompt("Digite o número 1"));
+        let c = Number(prompt("Digite o número 1"));
+
+        let lista = [];
+        lista.push(a);
+        lista.push(b);
+        lista.push(c);
+
+        let maior = 0;
+        let menor = lista[0];
+
+        for (i of lista) {
+            if (i > maior) {
+                maior = i;
+            }if (i < menor) {
+                menor = i
+            }
+        }
+
+        alert(`Maior: ${maior} Menor: ${menor}`)
+    </script>
+</body>
+</html>
